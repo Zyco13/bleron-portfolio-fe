@@ -8,17 +8,23 @@ export default function Contact() {
   const [message, setMessage] = useState('')
   const [sent, setSent] = useState(false)
 
- const handleSubmit = async (e: React.FormEvent) => {
+const handleSubmit = async (e: { preventDefault: () => void }) => {
   e.preventDefault()
 
- const response = await fetch('https://bleron-portfolio-be-production.up.railway.app/api/contact', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ name, email, message }),
-})
+  try {
+    const response = await fetch('https://bleron-portfolio-be-production.up.railway.app/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, message }),
+    })
 
-  if (response.ok) {
-    setSent(true)
+    if (response.ok) {
+      setSent(true)
+    } else {
+      console.error('Status:', response.status)
+    }
+  } catch (error) {
+    console.error('Fel:', error)
   }
 }
 
