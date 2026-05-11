@@ -25,4 +25,5 @@ h1, h2, h3 {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
