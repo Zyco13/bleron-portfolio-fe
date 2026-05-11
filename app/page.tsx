@@ -1,5 +1,5 @@
 import Hero from './components/Hero'
-import Story from './components/Story'
+import About from './components/About'
 import Skills from './components/Skills'
 import CV from './components/CV'
 import Project from './components/Projects'
@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Story />
+      <About />
       <Skills />
       <CV />
       <Project />

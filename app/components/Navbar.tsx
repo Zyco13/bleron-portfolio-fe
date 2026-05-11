@@ -10,7 +10,7 @@ export default function Navbar() {
       </span>
 
       <ul className="flex gap-8 list-none">
-        {['story', 'skills', 'cv', 'projects', 'contact'].map((item) => (
+        {['about', 'skills', 'cv', 'projects', 'contact'].map((item) => (
           <li key={item}>
             <a href={`#${item}`}
                className="text-sm px-3 py-1 transition-all duration-200"
