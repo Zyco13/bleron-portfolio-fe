@@ -6,7 +6,7 @@ export default function Navbar() {
          style={{ backgroundColor: 'var(--dark)', borderBottom: '1px solid var(--green)' }}>
       
       <span className="text-sm" style={{ fontFamily: 'Press Start 2P', color: 'var(--green)' }}>
-        BZ
+        Bleron Zekaj
       </span>
 
       <ul className="flex gap-8 list-none">
