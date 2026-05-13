@@ -133,9 +133,9 @@ export default function CV() {
           </h3>
           <div className="flex flex-col gap-3">
             {[
-              { lang: 'Svenska', level: 'Mother tounge' },
-              { lang: 'Albanska', level: 'Mother tounge' },
-              { lang: 'Engelska', level: 'Fluent' },
+              { lang: 'Swedish', level: 'Mother tounge' },
+              { lang: 'Albanian', level: 'Mother tounge' },
+              { lang: 'English', level: 'Fluent' },
             ].map((l) => (
               <div key={l.lang} className="flex justify-between border-b pb-2"
                    style={{ borderColor: 'var(--text)' }}>

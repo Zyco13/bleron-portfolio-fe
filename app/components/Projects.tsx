@@ -27,7 +27,7 @@ export default function Projects() {
         className="mb-16"
         style={{ fontSize: "clamp(1rem, 3vw, 1.8rem)", color: "var(--green)" }}
       >
-        Projekt
+        Projects
       </h2>
 
       <div className="grid md:grid-cols-2 gap-6 max-w-4xl w-full">
