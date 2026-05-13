@@ -9,25 +9,25 @@ export default function Contact() {
   const [sent, setSent] = useState(false);
 
   const handleSubmit = async () => {
-  try {
-    const response = await fetch(
-      "https://bleron-portfolio-be-production.up.railway.app/api/contact",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, message }),
-      },
-    );
+    try {
+      const response = await fetch(
+        "https://bleron-portfolio-be-production.up.railway.app/api/contact",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, message }),
+        },
+      );
 
-    if (response.ok) {
-      setSent(true);
-    } else {
-      console.error("Status:", response.status);
+      if (response.ok) {
+        setSent(true);
+      } else {
+        console.error("Status:", response.status);
+      }
+    } catch (error) {
+      console.error("Fel:", error);
     }
-  } catch (error) {
-    console.error("Fel:", error);
-  }
-};
+  };
 
   return (
     <section
@@ -39,14 +39,14 @@ export default function Contact() {
         className="mb-4"
         style={{ fontSize: "clamp(1rem, 3vw, 1.8rem)", color: "var(--green)" }}
       >
-        Kontakt
+        Contact
       </h2>
 
       <p
         className="text-xs mb-16"
         style={{ color: "var(--text)", fontFamily: "var(--font-share-tech)" }}
       >
-        Vill du komma i kontakt? Hör av dig!
+        Would you like to get in touch? Get in touch!
       </p>
 
       <div className="grid md:grid-cols-2 gap-16 max-w-4xl w-full text-left">
@@ -108,14 +108,14 @@ export default function Contact() {
                 fontFamily: "var(--font-share-tech)",
               }}
             >
-              ✓ Meddelande skickat! Jag hör av mig.
+              ✓ Message sent! I'll be in touch.
             </p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <input
               type="text"
-              placeholder="Namn"
+              placeholder="Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
@@ -140,7 +140,7 @@ export default function Contact() {
               }}
             />
             <textarea
-              placeholder="Meddelande"
+              placeholder="Message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
@@ -155,14 +155,22 @@ export default function Contact() {
             <button
               type="button"
               onClick={handleSubmit}
-              className="text-xs px-6 py-4 transition-all duration-300 hover:bg-[#39ff14] hover:text-black"
+              className="text-xs px-6 py-4 transition-all duration-300"
               style={{
                 border: "1px solid var(--green)",
                 color: "var(--green)",
                 fontFamily: "var(--font-share-tech)",
               }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "var(--green)";
+                e.currentTarget.style.color = "#000000";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "transparent";
+                e.currentTarget.style.color = "var(--green)";
+              }}
             >
-              Skicka →
+              Send →
             </button>
           </form>
         )}

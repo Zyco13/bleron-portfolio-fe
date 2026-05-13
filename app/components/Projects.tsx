@@ -3,7 +3,7 @@
 const projects = [
   {
     name: "LRN-Hub",
-    desc: 'En svensk EdTech-plattform — "TikTok för utbildning" — riktad mot svenska universitetsstudenter. Användare kan dela 60-sekunders akademiska videos, hitta studiekompisar via ett Tinder-inspirerat matchningssystem och boka betalda mentorssessioner. Byggd som sologrundare från idé till live produkt.',
+    desc: 'A Swedish EdTech platform — "TikTok for education" — aimed at Swedish university students. Users can share 60-second academic videos, find study buddies via a Tinder-inspired matching system, and book paid mentoring sessions. Built as a solo founder from idea to live product.',
     tech: [
       "React",
       "TypeScript",

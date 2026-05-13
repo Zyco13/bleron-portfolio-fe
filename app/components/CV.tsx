@@ -1,57 +1,57 @@
 const experience = [
   {
-    title: 'Fritidsledare',
+    title: 'Leisure Leader',
     company: 'Fuzed',
     period: 'Dec 2025 – Nuvarande',
-    desc: 'Ansvarar för barn och ungdomars aktiviteter och välmående. Stärker ledarskaps- och kommunikationsfärdigheter.',
+    desc: 'Responsible for children and youth activities and well-being. Strengthens leadership and communication skills.',
   },
   {
-    title: 'Lärare / Fotbollstränare',
+    title: 'Student Assistant / Football Coach',
     company: 'Svartedalsskolan, Göteborg',
     period: 'Aug 2024 – Aug 2025',
-    desc: 'Kombinerade rollen som lärare med fotbollstränare. Kommunicerar och motiverar elever i olika åldrar och bakgrunder.',
+    desc: 'Combined the role of student assistant with football coach. Communicates and motivates students of different ages and backgrounds.',
   },
   {
-    title: 'Säljare',
+    title: 'Salesman',
     company: 'Telenor Nordstan',
     period: 'Feb 2024 – Aug 2024',
-    desc: 'Fokus på merförsäljning och kundanalys. Balanserade kundens behov med affärsmässiga mål.',
+    desc: 'Focus on upselling and customer analysis. Balanced customer needs with business goals.',
   },
   {
-    title: 'Säljare – Telecom & Data',
+    title: 'Salesman – Telecom & Data',
     company: 'Elgiganten Nordstan, Göteborg',
     period: 'Aug 2023 – Feb 2024',
-    desc: 'Breddade teknisk produktkunskap och säljerfarenhet i högt tempomiljö.',
+    desc: 'Broadened technical product knowledge and sales experience in a fast-paced environment.',
   },
   {
-    title: 'Säljare – Telefoni',
+    title: 'Salesman – Telecom',
     company: 'Elgiganten Phonehouse Väla',
     period: 'Maj 2023 – Aug 2023',
-    desc: 'Grunden i produktkunskap, säljstrategi och kundservice inom detaljhandeln.',
+    desc: 'The basics of product knowledge, sales strategy and customer service in retail.',
   },
   {
-    title: 'Elevassistent / Fritidspedagog',
+    title: 'Student assistant / Leisure time educator',
     company: 'NannyPalmkvist Skolan',
     period: 'Mars 2022 – Dec 2022',
-    desc: 'Stöttade elever med olika diagnoser i skolarbete och social utveckling. Ansvarade för ca 20 elever på fritids.',
+    desc: 'Supported students with various diagnoses in schoolwork and social development. Responsible for approximately 20 students in after-school activities.',
   },
   {
-    title: 'Lagerarbetare',
+    title: 'Warehouse worker',
     company: 'Nowaste Logistics AB',
     period: 'Juni 2019 – Jan 2022',
-    desc: 'Nattskift med ansvar för städning, inventering och påfyllning. Strukturerat teamarbete under tidspress.',
+    desc: 'Night shift with responsibility for cleaning, inventory and replenishment. Structured teamwork under time pressure.',
   },
   {
-    title: 'Lagerarbetare',
+    title: 'Warehouse worker',
     company: 'Boozt / Logent AB',
     period: 'Maj 2016 – Okt 2021',
-    desc: 'Plock och pack samt arbete på returavdelningen. Högt tempo och noggrannhet i logistikmiljö.',
+    desc: 'Pick and pack as well as work in the returns department. High pace and accuracy in a logistics environment.',
   },
 ]
 
 const education = [
   {
-    title: 'Systemutvecklare (YH)',
+    title: 'Software Developer (YH)',
     school: 'Jensen Yrkeshögskola',
     period: 'Aug 2025 – Maj 2027',
     desc: 'Java, Spring Boot, REST API:er, MySQL, JUnit, Mockito, TDD, React, TypeScript. Agila metoder och reella projektuppgifter.',
@@ -60,7 +60,7 @@ const education = [
     title: 'Gymnasie – Handelsprogrammet',
     school: 'Filbornaskolan, Helsingborg',
     period: 'Aug 2014 – Juni 2017',
-    desc: 'Inriktning mot försäljning, kundservice och ekonomi.',
+    desc: 'Focus on sales, customer service and finance.',
   },
 ]
 
@@ -78,7 +78,7 @@ export default function CV() {
         {/* Erfarenhet */}
         <div>
           <h3 className="text-xs mb-10 tracking-widest text-center" style={{ color: 'var(--green)' }}>
-            Arbetslivserfarenhet
+            Work experience
           </h3>
           <div className="flex flex-col gap-8">
             {experience.map((job) => (
@@ -105,7 +105,7 @@ export default function CV() {
         {/* Utbildning + Språk */}
         <div>
           <h3 className="text-xs mb-10 tracking-widest text-center" style={{ color: 'var(--green)' }}>
-            Utbildning
+            Education
           </h3>
           <div className="flex flex-col gap-8 mb-16">
             {education.map((edu) => (
@@ -129,13 +129,13 @@ export default function CV() {
           </div>
 
           <h3 className="text-xs mb-6 tracking-widest text-center" style={{ color: 'var(--green)' }}>
-            Språk
+            Language
           </h3>
           <div className="flex flex-col gap-3">
             {[
-              { lang: 'Svenska', level: 'Modersmål' },
-              { lang: 'Albanska', level: 'Modersmål' },
-              { lang: 'Engelska', level: 'Mycket goda kunskaper' },
+              { lang: 'Svenska', level: 'Mother tounge' },
+              { lang: 'Albanska', level: 'Mother tounge' },
+              { lang: 'Engelska', level: 'Fluent' },
             ].map((l) => (
               <div key={l.lang} className="flex justify-between border-b pb-2"
                    style={{ borderColor: 'var(--text)' }}>

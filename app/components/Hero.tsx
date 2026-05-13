@@ -26,7 +26,7 @@ export default function Hero() {
         className="text-xs mb-6 tracking-widest uppercase"
         style={{ color: "var(--text)" }}
       >
-        &gt; Välkommen till min portfolio
+        &gt; WELCOME
       </p>
 
       <h1
@@ -58,22 +58,30 @@ export default function Hero() {
           fontFamily: "Share Tech Mono",
         }}
       >
-        Systemutvecklare med bakgrund inom fotboll. Jag bygger applikationer med
-        Java, Spring Boot och moderna webbtekniker, med fokus på kvalitet och
-        testning.
+        Software developer with a background in football. I build applications
+        using Java, Spring Boot and modern web technologies, with a focus on
+        quality and testing.
       </p>
 
       <div className="flex gap-6 mt-12">
         <a
           href="#projects"
-          className="text-xs px-8 py-4 transition-all duration-300 hover:bg-[#39ff14] hover:text-black"
+          className="text-xs px-8 py-4 transition-all duration-300"
           style={{
             border: "1px solid var(--green)",
             color: "var(--green)",
             fontFamily: "Share Tech Mono",
           }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = "var(--green)";
+            e.currentTarget.style.color = "#000000";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = "transparent";
+            e.currentTarget.style.color = "var(--green)";
+          }}
         >
-          Se projekt →
+          Go to projects →
         </a>
         <a
           href="#contact"

@@ -1,20 +1,20 @@
 'use client'
 
 const skills = [
-  { name: 'Java', level: 'Huvudspråk' },
+  { name: 'Java', level: 'Main language' },
   { name: 'Spring Boot', level: 'Huvudramverk' },
   { name: 'Spring Security', level: 'Auth & JWT' },
   { name: 'JUnit', level: 'Testing' },
-  { name: 'SQL', level: 'Databaser' },
+  { name: 'SQL', level: 'Database' },
   { name: 'REST API', level: 'Backend' },
   { name: 'Docker', level: 'Containers' },
-  { name: 'Git', level: 'Versionshantering' },
+  { name: 'Git', level: 'Versioncontrol' },
   { name: 'PowerShell', level: 'Scripting' },
   { name: 'React', level: 'Frontend' },
   { name: 'TypeScript', level: 'Frontend' },
   { name: 'Tailwind CSS', level: 'Frontend' },
   { name: 'Next.js', level: 'Frontend' },
-  { name: 'AWS', level: 'Lär mig' },
+  { name: 'Javascript', level: 'Frontend' },
 ]
 
 export default function Skills() {
